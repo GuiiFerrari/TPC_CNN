@@ -22,3 +22,4 @@ class Segmentation():
 
         loss = tf.keras.losses.BinaryCrossentropy()
         metric = tf.keras.metrics.BinaryAccuracy()
+        self.model.compile(loss = loss, optimizer = opt, metrics = [metric])
